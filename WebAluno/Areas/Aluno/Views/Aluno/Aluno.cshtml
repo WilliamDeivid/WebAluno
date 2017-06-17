@@ -8,36 +8,13 @@
 <head>
     <meta charset="UTF-8">
     <link href="~/Content/style_menu.css" rel="stylesheet">
+    <link href="~/Content/Panel.css" rel="stylesheet">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Scripts/Menu.js"></script>
     <title>Unisociesc - Aluno</title>
-
-    <script type="text/javascript">
-  function openNav(){
-    document.getElementById("SlideMenuNav").style.display="block"
-  }
-  function closeNav(){
-    document.getElementById("SlideMenuNav").style.display="none"
-  }
-  function showresponddiv(e){
-    var n=e.replace("submenu-","opensubmenu-"),l=document.getElementById(n);current&&current!=l&&(current.style.display="none"),"none"==l.style.display?(l.style.display="block",current=l):l.style.display="none"
-  }
-  var current=null;
-    </script>
-
-    <script type="text/javascript">
-  function fixOpacity(){
-    document.getElementById("menuOpacity").style.opacity = "0.6";
-    document.getElementById("menuOpacity").style.transition = "0.4s";
-  }
-  function fixOpacity2(){
-    document.getElementById("menuOpacity").style.opacity = "1";
-    document.getElementById("menuOpacity").style.transition = "0.4s";
-  }
-    </script>
-
 </head>
 
 <body>
-
     <div class='content'>
         <div id="SlideMenuNav" class="sidenav">
             <div class="author-profile">
@@ -64,7 +41,9 @@
             </ul>
         </div>
         <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
+        <div class="panel" id="scroll">
+               
+        </div>
     </div>
-
 </body>
 </html>

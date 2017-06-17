@@ -1,0 +1,42 @@
+﻿#scroll{
+    overflow:auto;
+}
+
+.panel{
+  position: relative;
+  background: #fff;
+  width: 115vh;
+  height:100vh;
+  margin: 0px auto;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.chart{
+  display: inline-block;
+  width: 110px;
+  margin: 40px auto 20px;
+  padding: 0 10px;
+}
+.easyPieChart {
+  position: relative;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.percentage,
+.label {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: 100;
+}
+.percentage{
+  font-size: 17px;
+}
+sup{
+  top: -0.2em;
+  margin-left: 1px;
+}
