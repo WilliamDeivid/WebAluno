@@ -1,47 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using System.Web.Helpers;
 using System.Web.Mvc;
 using WebAluno.Models;
 using WebAluno.ViewModel;
 
 namespace WebAluno.Controllers
 {
-    public class AutenticationController : Controller
+    public class HomeController : Controller
     {
         Model1 db = new Model1();
-        public ActionResult Login()
+
+        // GET: Home
+        public ActionResult Home()
         {
-            VmLogin vm = new VmLogin();
-            return RedirectToAction("Aluno", "Aluno", new { area = "Aluno" });
+            return View();
         }
 
         [HttpPost]
-        public ActionResult Login(VmLogin vm)
+        public ActionResult Home(int MATRICULA, string SENHA)
         {
+            
             if (ModelState.IsValid)
             {
-                //Busca o usuário no banco com o mesmo email que foi informado na tela
-                usuario usuarioDb = db.usuario.Where(u => u.MATRICULA == vm.MATRICULA).FirstOrDefault();
-
+                //Busca o usuário no banco com a mesma matricula que foi informado na tela
+                usuario usuarioDb = db.usuario.Where(u => u.MATRICULA == MATRICULA).FirstOrDefault();
 
                 if (usuarioDb == null)
                 {
                     ModelState.AddModelError("", "Não existe usuário com essa matrícula");
-                    return View(vm);
+                    return View();
                 }
 
                 //Compara a senha que foi informada na tela com a senha criptografada armazenada
                 //no banco
-                bool senhaConfere = Crypto.VerifyHashedPassword(usuarioDb.SENHA, vm.SENHA);
-
-                if (!senhaConfere)
+                //bool senhaConfere = Crypto.VerifyHashedPassword(usuarioDb.SENHA, vm.SENHA);
+                bool senhaConfere;
+                if (usuarioDb.SENHA == SENHA)
+                {
+                    senhaConfere = true;
+                }
+                else
                 {
                     ModelState.AddModelError("", "Senha incorreta");
-                    return View(vm);
+                    return View();
                 }
                 //*asd
                 //Gera um token de autenticação único.
@@ -66,12 +69,16 @@ namespace WebAluno.Controllers
                 //Atualizar o usuário do banco com o token de autenticação
                 //usuarioDb.AuthId = authId;
                 //db.SaveChanges();
-                
-                return RedirectToAction("Login", "Home");
+
+                return RedirectToAction("Aluno", "Aluno", new { area = "Aluno" });
+                //> @Html.ActionLink("Aluno", "Aluno", new { area = "Aluno", controller = "Aluno" })
 
             }
-            return View(vm);
+            return View();
         }
-        
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
     }
 }

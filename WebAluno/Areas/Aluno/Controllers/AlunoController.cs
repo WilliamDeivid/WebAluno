@@ -9,7 +9,7 @@ namespace WebAluno.Areas.Aluno.Controllers
     public class AlunoController : Controller
     {
         // GET: Aluno/Aluno
-        public ActionResult Index()
+        public ActionResult Aluno()
         {
             return View();
         }
