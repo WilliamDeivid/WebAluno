@@ -9,7 +9,7 @@ namespace WebAluno.Areas.Aluno.Controllers
     public class RealizarProvaController : Controller
     {
         // GET: Aluno/RealizarProva
-        public ActionResult Index()
+        public ActionResult RealizarProva()
         {
             return View();
         }

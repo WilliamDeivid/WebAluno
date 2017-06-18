@@ -139,6 +139,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\docs.min.css" />
+    <Content Include="Content\RealizarProva.css" />
     <Content Include="Content\Panel.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
@@ -150,6 +151,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Aluno\Views\Aluno\Aluno.cshtml" />
+    <Content Include="Areas\Aluno\Views\RealizarProva\RealizarProva.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -199,7 +201,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Aluno\Models\" />
-    <Folder Include="Areas\Aluno\Views\RealizarProva\" />
     <Folder Include="Areas\Aluno\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>

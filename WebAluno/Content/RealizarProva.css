@@ -1,0 +1,168 @@
+﻿#scroll{
+    overflow:auto;
+}
+
+.panel{
+  position: relative;
+  background: #fff;
+  width: 115vh;
+  max-width: 1680px;
+  min-width: 570px;
+  max-height: 1080px;
+  min-height: 515px;
+  height:100vh;
+  margin: 0px auto;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.chart{
+  display: inline-block;
+  width: 110px;
+  margin: 40px auto 20px;
+  padding: 0 10px;
+}
+.easyPieChart {
+  position: relative;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.percentage,
+.label {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: 100;
+}
+.percentage{
+  font-size: 17px;
+}
+sup{
+  top: -0.2em;
+  margin-left: 1px;
+}
+
+textarea {
+    width: 113vh;
+    margin-left: 10px;
+    height: 25vw;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+/*Proximo, voltar*/
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#centralizar {
+    left: 45%;
+    height: 10vh;
+    width: 115vh;
+    position: fixed;
+    top: 90vh;
+    padding-bottom: 20px;
+}
+ /*Fim próximo/voltar*/
+/*Inicio Radio (check-box)*/
+
+input[type=radio] {
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  outline: none;
+  width: 16px;
+  vertical-align: text-bottom;
+}
+input[type=radio]:after {
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  background-color: #fff;
+  border-radius: 50%;
+  content: '';
+  height: 16px;
+  left: -2px;
+  position: absolute;
+  pointer-events: none;
+  top: -2px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 16px;
+}
+input[type=radio]:checked:after {
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  background-color: #000;
+  border-color: #000;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.list {
+    list-style-type:none;
+}
+/*Fim radio (check box buttom)*/
+/*Inicio Título da Prova*/
+.centralizar{
+    text-align:center;
+}
+.desistir{
+    margin-top: 8px;
+    margin-left: 5px;
+}
