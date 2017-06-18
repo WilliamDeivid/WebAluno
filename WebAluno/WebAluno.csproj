@@ -152,6 +152,10 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Aluno\Views\Aluno\Aluno.cshtml" />
     <Content Include="Areas\Aluno\Views\RealizarProva\RealizarProva.cshtml" />
+    <Content Include="Areas\Aluno\Views\Perfil\Perfil.cshtml" />
+    <Content Include="Areas\Aluno\Views\Duvidas\Duvidas.cshtml" />
+    <Content Include="Areas\Aluno\Views\RealizarProva\RealizarProvaFiltro.cshtml" />
+    <Content Include="Areas\Aluno\Views\DesempenhoResultado\DesempenhoResultado.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -163,6 +167,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Aluno\AlunoAreaRegistration.cs" />
     <Compile Include="Areas\Aluno\Controllers\AlunoController.cs" />
+    <Compile Include="Areas\Aluno\Controllers\DesempenhoResultadoController.cs" />
+    <Compile Include="Areas\Aluno\Controllers\DuvidasController.cs" />
+    <Compile Include="Areas\Aluno\Controllers\PerfilController.cs" />
     <Compile Include="Areas\Aluno\Controllers\RealizarProvaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">

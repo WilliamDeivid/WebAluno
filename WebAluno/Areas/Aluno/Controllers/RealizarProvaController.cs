@@ -13,5 +13,9 @@ namespace WebAluno.Areas.Aluno.Controllers
         {
             return View();
         }
+        public ActionResult RealizarProvaFiltro()
+        {
+            return View();
+        }
     }
 }

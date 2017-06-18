@@ -22,8 +22,9 @@
   padding: 0 10px;
 }
 .easyPieChart {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
+}
   canvas {
     position: absolute;
     top: 0;
@@ -48,7 +49,6 @@ textarea {
     width: 113vh;
     margin-left: 10px;
     height: 25vw;
-    padding: 12px 12px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -162,7 +162,22 @@ input[type=radio]:checked:after {
 .centralizar{
     text-align:center;
 }
-.desistir{
-    margin-top: 8px;
+/*fim titulo */
+/*questao*/
+.questao{
+    vertical-align: middle;
+    font-size: 12px;
+    clear: both;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 2px;
+    border-bottom-width: 2px;
+    margin-bottom: 5px;
     margin-left: 5px;
-}
+    margin-right: 5px;
+
+    }
