@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Aluno\AlunoAreaRegistration.cs" />
     <Compile Include="Areas\Aluno\Controllers\AlunoController.cs" />
+    <Compile Include="Areas\Aluno\Controllers\RealizarProvaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,6 +199,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Aluno\Models\" />
+    <Folder Include="Areas\Aluno\Views\RealizarProva\" />
     <Folder Include="Areas\Aluno\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
