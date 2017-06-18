@@ -12,7 +12,6 @@
   min-height: 515px;
   height:100vh;
   margin: 0px auto;
-  text-align: center;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
 }
 
@@ -43,4 +42,56 @@
 sup{
   top: -0.2em;
   margin-left: 1px;
+}
+
+textarea {
+    width: 113vh;
+    margin-left: 10px;
+    height: 25vw;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+/*Proximo, voltar*/
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#centralizar {
+    left: 45%;
+    height: 10vh;
+    width: 115vh;
+    position: fixed;
+    top: 90vh;
+    padding-bottom: 20px;
 }
