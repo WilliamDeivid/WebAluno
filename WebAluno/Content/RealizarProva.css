@@ -188,3 +188,24 @@ input[type=radio]:checked:after {
     margin-right: 5px;
     margin-top: 5px;
 }
+/*Filtro da prova
+* {
+    box-sizing: border-box;
+}
+
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
+}
+
+@media only screen and (max-width: 400px) {
+    .col { 
+        display: block;
+        width: 100%;
+    }
+}
+    */
