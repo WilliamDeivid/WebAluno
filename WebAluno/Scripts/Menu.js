@@ -18,3 +18,13 @@ function fixOpacity2(){
     document.getElementById("menuOpacity").style.opacity = "1";
     document.getElementById("menuOpacity").style.transition = "0.4s";
 }
+function limite_textarea(valor) {
+    quant = 180;
+    total = valor.length;
+    if (total <= quant) {
+        resto = quant - total;
+        document.getElementById('cont').innerHTML = resto;
+    } else {
+        document.getElementById('texto').value = valor.substr(0, quant);
+    }
+}

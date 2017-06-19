@@ -13,7 +13,7 @@
     <link href="~/Content/RealizarProva.css" rel="stylesheet">
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="~/Scripts/Menu.js"></script>
-    <title>Unisociesc - Aluno</title>
+    <title>Unisociesc - Realizar Prova</title>
 </head>
 <body>
     <div class='content'>
@@ -42,25 +42,54 @@
             </ul>
         </div>
         <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
+
         <div class="panel" id="scroll">
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm" alt="enviar" style="margin-left: 5px; margin-top: 5px;">Desistir</button>
-            <!-- Modal duvida-->
-            <div class="modal fade" id="confirm" role="dialog">
-                <div class="modal-dialog modal-md">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <p>Confirmar?</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="" type="button" data-dismiss="modal" class="btn btn-danger" id="confirm" data-toggle="modal" data-target="">Sim</a>
-                            <a href="" type="button" data-dismiss="modal" class="btn btn-info pull-left">Cancelar</a>
+            <div class="cabecalhoProva">
+                <div style="float: left;">
+                    <!--Botao desistir-->
+                    <a href="" type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm" alt="enviar" style="margin-top: 5px;">Desistir</a>
+                    <!-- Modal Deistir-->
+                    <div class="modal fade" id="confirm" role="dialog">
+                        <div class="modal-dialog modal-md" style="width: 348px;">
+                            <div class="modal-content" style="width: 328px;">
+                                <div class="modal-body">
+                                    <label>Você realmente deseja desistir da prova?</label>
+                                </div>
+                                <div class="modal-footer" style="height: 70px;width: 321px;">
+                                    <a href="" type="button" data-dismiss="modal" class="btn btn-danger" id="confirm" data-toggle="modal" data-target="" style="width: 82px;">Sim</a>
+                                    <a href="" type="button" data-dismiss="modal" class="btn btn-info pull-left">Cancelar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Modal Desistir-->
+                <!--Botao Dúvida-->
+                <!-- Modal dúvida-->
+                <div style="float: right;">
+                    <a href="" type="button" class="btn btn-danger" data-toggle="modal" data-target="#duvida" alt="enviar" style="margin-left: 5px; margin-top: 5px;"> &#63; </a>
+
+                    <div class="modal fade" id="duvida" role="dialog">
+                        <div class="modal-dialog modal-md" style="width: 348px;">
+                            <div class="modal-content" style="width: 328px;height: 267px;">
+                                <div class="modal-body" style="padding-bottom: 0px;">
+                                    <textarea style="width: 282px; height: 150px;" maxlength="180" placeholder="Digite sua dúvida..." onkeyup="limite_textarea(this.value)" id="texto" ></textarea>
+                                    <label style="padding-left: 6px;"> Carácteres: 180/</label><span id="cont">180</span>
+                                </div>
+                                <div class="modal-footer" style="height: 64px;width: 327px;margin-top: 0px;padding-top: 5px;">
+                                    <a href="" type="button" data-dismiss="modal" class="btn btn-danger" id="confirm" data-toggle="modal" data-target="" style="width: 82px;">Enviar</a>
+                                    <a href="" type="button" data-dismiss="modal" class="btn btn-info pull-left">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Dúvia-->
+                <div class="centralizar">
+                    <h2 style="margin-top: 0px;">Prova de Auto Teste</h2>
+                    <p ><u>Disciplina:</u> Sistemas Operacionais</p>
+                </div>
             </div>
-            <!-- Modal duvida-->
-            <h2 class="centralizar" style="margin-top: 0px;">Prova de Auto Teste</h2>
-            <p class="centralizar"><u>Disciplina:</u> Sistemas Operacionais</p>
             <form>
                 <div class="questao">
                     <p style="text-align: justify;">TESTESTESTESTE</p>
@@ -106,5 +135,8 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>

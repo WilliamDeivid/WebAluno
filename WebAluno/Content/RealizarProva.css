@@ -180,4 +180,11 @@ input[type=radio]:checked:after {
     margin-left: 5px;
     margin-right: 5px;
 
-    }
+}
+.cabecalhoProva{
+    height: 80px;
+    border-left-width: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
