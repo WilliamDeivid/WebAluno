@@ -1,0 +1,271 @@
+.btn-info {
+  color:#FFF;
+  background-color:#428BCA;
+  border-color:#2b7abf;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open>.dropdown-toggle.btn-info {
+  color:#fff;
+  background-color:#3680c1;
+  border-color:#2270b4;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.panel h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.resultados {
+  margin-top: -15px;
+  white-space: pre;
+}
+span#nomeProva {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.gabarito {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+
+/* ############ CSS DOS GRAFICOS ################################ */
+
+#graficos {
+  margin-top: -30px;
+  width: 100%;
+  padding: 0 130px;
+}
+#graficos-pessoal {
+  float: left;
+}
+#graficos-alunos {
+  float: right;
+}
+
+.voce {
+  max-width: 48px;
+  min-width: 48px;
+  width: 48px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.alunos {
+  max-width: 48px;
+  min-width: 48px;
+  width: 48px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.progress-pie-chart,
+.progress-pie-chart2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.progress-pie-chart.gt-50,
+.progress-pie-chart2.gt-502 {
+  background-color: #428BCA;
+}
+.ppc-progress,
+.ppc-progress2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill,
+.ppc-progress2 .ppc-progress-fill2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #428BCA;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress,
+.gt-502 .ppc-progress2 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill,
+.gt-502 .ppc-progress2 .ppc-progress-fill2 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+.ppc-percents,
+.ppc-percents2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents span,
+.ppc-percents2 span {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #428BCA;
+}
+.pcc-percents-wrapper,
+.pcc-percents-wrapper2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+.progress-pie-chart,
+.progress-pie-chart2 {
+  margin: 50px auto 0;
+}
+
+
+/* ############ CSS DAS BARRAS ################################ */
+
+.wrap {
+  /*float: left;*/
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 130px;
+  position: relative;
+  top: 25px;
+}
+.wrap-title {
+  font-size: 11px;
+  text-align: center;
+}
+
+.question {
+  width: auto;
+  margin-right: 15px;
+  height: 100%;
+}
+.question .number {
+  height: 19px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+.question .number:nth-of-type(2n) {
+  margin-bottom: 4px;
+}
+
+.answer {
+  width: auto;
+  margin-right: 15px;
+  height: 100%;
+}
+.answer .RightOrWrong {
+  text-align: center;
+  margin-top: 2px;
+  height: 21px;
+}
+.answer .RightOrWrong:nth-of-type(2n) {
+  margin-top: 1px;
+}
+.answer .RightOrWrong img {
+  width: 20px;
+  height: 20px;
+}
+
+.bars {
+  float: left;
+  width: 200px;
+  /*margin: 0 auto;*/
+}
+.bars ul li {
+  line-height: 2;
+  font-weight: bold;
+  font-size: .85em;
+  text-transform: uppercase;
+  /*clear: both;*/
+}
+.bars ul li:before {
+  content: "\2023";
+  padding: 0 1em 0 0;
+}
+
+.bars .bar {
+  background: #428BCA; /* cor das barras */
+  width: 0;
+  margin: .25em 0;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background .2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  /*clear: both;*/
+}
+/* USAR CSS ABAIXO SE QUISER USAR OUTRA
+COR NAS BARRAS PARES E IMPARES
+.bars .bar:nth-of-type(2n) {
+  background: #ed7669;
+} */
+
+/*.bars .bar .label {
+  font-size: .75em;
+  padding: 1em;
+  background: #3d3d3d;
+  width: 8em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+}
+.bars .bar .label.light {
+  background: #575757;
+}*/
+
+.bars .count {
+  position: absolute;
+  right: .25em;
+  top: 0em;
+  padding: .15em;
+  font-size: .75em;
+  font-weight: bold;
+}

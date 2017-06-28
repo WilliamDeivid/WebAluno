@@ -1,0 +1,9 @@
+﻿.menu {
+    float: left; 
+    width: 100%; 
+
+}
+.conteudo { 
+    float: right; 
+    width: 100%; 
+}

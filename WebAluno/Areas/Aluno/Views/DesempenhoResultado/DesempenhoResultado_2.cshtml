@@ -1,0 +1,142 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style_menu.css" rel="stylesheet">
+    <link href="~/Content/Panel.css" rel="stylesheet">
+    <link href="~/Content/style_desempenho2.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Scripts/Menu.js"></script>
+    <title>Unisociesc - Aluno</title>
+</head>
+<body>
+    <div class='content'>
+        <div id="SlideMenuNav" class="sidenav">
+            <div class="author-profile">
+                <div class="background"><img src="https://image.ibb.co/fpw0ak/bg.jpg"></div>
+                <div class="author-avatar"><img src="https://image.ibb.co/jfea85/avatar.png"></div>
+                <span class="author-title">Teste Silva</span>
+                <span class="author-RA">RA: 114001352</span>
+                <span class="author-Curse">Curso: Bacharelado em S.I</span>
+            </div>
+            <span class="closebtn"><a href="javascript:void(0)" onclick="closeNav()" title="Fechar Menu">&times;</a></span>
+            <ul id="menuOpacity" class="menu" onMouseOver="fixOpacity2()" onmouseout="fixOpacity()">
+                <li><a href="/Aluno/Aluno/Aluno"><i class="fa fa-home" aria-hidden="true"></i>Início</a></li>
+                <li><a href="/Aluno/Perfil/Perfil"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a></li>
+                <li><a href="/Aluno/RealizarProva/RealizarProvaFiltro"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Realizar prova</a></li>
+                <li><a href="/Aluno/Duvidas/Duvidas"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas</a></li>
+                <li><a href="/Aluno/DesempenhoResultado/DesempenhoResultado"><i class="fa fa-bar-chart" aria-hidden="true"></i>Desempenho e Resultados</a></li>
+                <!-- <li><a id="submenu-2" href="javascript:void(0)" onclick="showresponddiv(this.id)"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Submenu2</a>
+                  <ul id="opensubmenu-2" class="submenu" style="display: block;">
+                    <li><a href="#">Submenu1</a></li>
+                    <li><a href="#">Submenu2</a></li>
+                    <li><a href="#">Submenu3</a></li>
+                  </ul>
+                </li> -->
+            </ul>
+        </div>
+        <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
+
+        <div class="panel" id="scroll">
+            <h1>Desempenho e Resultados</h1>
+
+            <div class="resultados">
+                <span><b>Disciplina:</b> Sistemas Operacionais 1</span>
+                <span><b>Assunto:</b> Windows Server 2012 R2</span>
+                <span><b>Professor(a):</b> Manseira</span>
+                <span id="nomeProva">Prova 1</span>
+            </div>
+
+            <div id="graficos">
+                <div id="graficos-pessoal">
+                    <div class="voce">
+                        <img src="~/Imagens/user.png" width="48px" height="48px" />
+                        <span>Você</span>
+                    </div>
+                    <div class="progress-pie-chart" data-percent="43">
+                        <div class="ppc-progress">
+                            <div class="ppc-progress-fill"></div>
+                        </div>
+                        <div class="ppc-percents">
+                            <div class="pcc-percents-wrapper">
+                                <span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="graficos-alunos">
+                    <div class="alunos">
+                        <img src="~/Imagens/users.png" width="48px" height="48px" />
+                        <span>Alunos</span>
+                    </div>
+                    <div class="progress-pie-chart2" data-percent="89">
+                        <div class="ppc-progress2">
+                            <div class="ppc-progress-fill2"></div>
+                        </div>
+                        <div class="ppc-percents2">
+                            <div class="pcc-percents-wrapper2">
+                                <span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="question">
+                    <div class="wrap-title">Questão</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                </div>
+
+                <div class="answer">
+                    <div class="wrap-title">Sua resposta</div>
+                    <div class="RightOrWrong"><img src="~/Imagens/error.png" /></div>
+                    <div class="RightOrWrong"><img src="~/Imagens/right.png" /></div>
+                    <div class="RightOrWrong"><img src="~/Imagens/error.png"/></div>
+                    <div class="RightOrWrong"><img src="~/Imagens/right.png" /></div>
+                    <div class="RightOrWrong"><img src="~/Imagens/right.png" /></div>
+                </div>
+
+                <div class="bars">
+                    <div class="wrap-title">Porcentagem geral de acertos</div>
+                    <div class="bar cf" data-percent="100%">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="bar cf" data-percent="50%">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="bar cf" data-percent="100%">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="bar cf" data-percent="90%">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="bar cf" data-percent="100%">
+                        <span>&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gabarito">
+                <a type="button" class="btn btn-info" href="#gabarito">Gabarito</a>
+            </div>
+
+        </div> <!-- end panel & scroll -->
+    </div> <!-- end content -->
+
+    <script ype="text/javascript" src="~/Scripts/jquery-2-1-3.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/Graficos.js"></script>
+    <script type="text/javascript" src="~/Scripts/Barras.js"></script>
+</body>
+</html>
+

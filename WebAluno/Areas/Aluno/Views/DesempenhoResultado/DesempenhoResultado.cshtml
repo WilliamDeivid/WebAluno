@@ -7,9 +7,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/style_menu.css" rel="stylesheet">
     <link href="~/Content/Panel.css" rel="stylesheet">
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style_desempenho.css" rel="stylesheet">
     <script type="text/javascript" src="~/Scripts/Menu.js"></script>
     <title>Unisociesc - Aluno</title>
 </head>
@@ -42,8 +43,59 @@
         <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
         <div class="panel" id="scroll">
             <h1>Desempenho e Resultados</h1>
-        </div>
+
+            <div class="centralizar">
+                <form class="form-filtros">
+                    <div class="form-group">
+                        <label>Selecione a disciplina</label>
+                        <select class="form-control">
+                            <
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="so1">Sistemas Operacionais 1</option>
+                            <option value="so2">Sistemas Operacionais 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Selecione o assunto</label>
+                        <select class="form-control">
+                            <
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="server2003">Windows Server 2003</option>
+                            <option value="server2008r2">Windows Server 2008 R2</option>
+                            <option value="server2012r2">Windows Server 20012 R2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Selecione o(a) professor(a)</label>
+                        <select class="form-control">
+                            <
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="manseira">Manseira</option>
+                            <option value="francini">Francini</option>
+                        </select>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Provas oficiais
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Provas de auto teste
+                        </label>
+                    </div>
+
+                    <!-- <button type="submit" class="btn btn-info">Pesquisar</button> -->
+                    <a type="button" class="btn btn-info" href="graficos2.html">Pesquisar</a>
+                </form>
+            </div>
+
+        </div> <!-- fim panel & scroll -->
+
+
     </div>
 </body>
 </html>
-
