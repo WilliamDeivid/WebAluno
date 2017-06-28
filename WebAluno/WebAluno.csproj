@@ -145,6 +145,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style_desempenho.css" />
+    <Content Include="Content\style_gabarito.css" />
     <Content Include="Content\style_desempenho2.css" />
     <Content Include="Content\style_menu.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -165,6 +166,7 @@
     <Content Include="Areas\Aluno\Views\RealizarProva\RealizarProvaFiltro.cshtml" />
     <Content Include="Areas\Aluno\Views\DesempenhoResultado\DesempenhoResultado.cshtml" />
     <Content Include="Areas\Aluno\Views\DesempenhoResultado\DesempenhoResultado_2.cshtml" />
+    <Content Include="Areas\Aluno\Views\Gabarito\Gabarito.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Graficos.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -182,6 +184,7 @@
     <Compile Include="Areas\Aluno\Controllers\AlunoController.cs" />
     <Compile Include="Areas\Aluno\Controllers\DesempenhoResultadoController.cs" />
     <Compile Include="Areas\Aluno\Controllers\DuvidasController.cs" />
+    <Compile Include="Areas\Aluno\Controllers\GabaritoController.cs" />
     <Compile Include="Areas\Aluno\Controllers\PerfilController.cs" />
     <Compile Include="Areas\Aluno\Controllers\RealizarProvaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

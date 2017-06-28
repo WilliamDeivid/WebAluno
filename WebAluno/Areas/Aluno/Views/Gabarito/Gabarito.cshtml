@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style_menu.css" rel="stylesheet">
+    <link href="~/Content/Panel.css" rel="stylesheet">
+    <link href="~/Content/style_gabarito.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Scripts/Menu.js"></script>
+    <title>Unisociesc - Aluno</title>
+</head>
+<body>
+    <div class='content'>
+        <div id="SlideMenuNav" class="sidenav">
+            <div class="author-profile">
+                <div class="background"><img src="https://image.ibb.co/fpw0ak/bg.jpg"></div>
+                <div class="author-avatar"><img src="https://image.ibb.co/jfea85/avatar.png"></div>
+                <span class="author-title">Teste Silva</span>
+                <span class="author-RA">RA: 114001352</span>
+                <span class="author-Curse">Curso: Bacharelado em S.I</span>
+            </div>
+            <span class="closebtn"><a href="javascript:void(0)" onclick="closeNav()" title="Fechar Menu">&times;</a></span>
+            <ul id="menuOpacity" class="menu" onMouseOver="fixOpacity2()" onmouseout="fixOpacity()">
+                <li><a href="/Aluno/Aluno/Aluno"><i class="fa fa-home" aria-hidden="true"></i>Início</a></li>
+                <li><a href="/Aluno/Perfil/Perfil"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a></li>
+                <li><a href="/Aluno/RealizarProva/RealizarProvaFiltro"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Realizar prova</a></li>
+                <li><a href="/Aluno/Duvidas/Duvidas"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas</a></li>
+                <li><a href="/Aluno/DesempenhoResultado/DesempenhoResultado"><i class="fa fa-bar-chart" aria-hidden="true"></i>Desempenho e Resultados</a></li>
+                <!-- <li><a id="submenu-2" href="javascript:void(0)" onclick="showresponddiv(this.id)"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Submenu2</a>
+                  <ul id="opensubmenu-2" class="submenu" style="display: block;">
+                    <li><a href="#">Submenu1</a></li>
+                    <li><a href="#">Submenu2</a></li>
+                    <li><a href="#">Submenu3</a></li>
+                  </ul>
+                </li> -->
+            </ul>
+        </div>
+        <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
+
+        <div class="panel" id="scroll">
+        <div class="info_prova">
+            <span><b>Disciplina:</b> Sistemas Operacionais 1</span>
+            <span><b>Assunto:</b> Windows Server 2012 R2</span>
+            <span><b>Professor(a):</b> Manseira</span>
+            <span><b>Prova:</b> DHCP - Prova 1</span>
+            <span><b>Data:</b> 20/06/2017</span>
+            <span><b>Você acertou </b> 20 <b>de</b> 30 <b>questões.</b></span>
+        </div>
+        <div class="titulo">
+            <h1>Questões</h1>
+        </div>
+        <div class="box_questao">
+            <p>Um profissional de TI da Eletrosul ficou com a tarefa de instalar o sistema operacional Windows Server 2012. Uma informação correta para esta instalação é: </p>
+            <p>A -  Ao instalar um dispositivo Plug and Play, poderá receber um aviso de que o driver foi assinado digitalmente acarretando em um erro durante o processo de instalação. O Windows Server 2012 carregará o driver somente se este não foi assinado digitalmente</p>
+            <p>B - O valor mínimo absoluto para uma instalação bem-sucedida deve ser 16 GB de RAM. Este valor já inclui o espaço extra para a partição do sistema instalado em uma rede e o espaço em disco para arquivos de paginação</p>
+            <p>C - Deve haver um dispositivo no-break conectado ao computador de destino ligado ao cabo de conexão serial antes de iniciar a instalação. A instalação detecta automaticamente os dispositivos conectados às portas seriais e o equipamento no-break evita problemas no processo de detecção</p>
+            <p>D - O software de proteção contra vírus deve estar habilitado, pois torna a instalação mais rápida já que verifica cada arquivo copiado localmente no computador</p>
+            <p>E - Como o firewall do Windows é ativado por padrão, os aplicativos de servidor que devem receber conexões de entrada não solicitadas falharão enquanto não forem criadas regras de entrada do firewall para permitir sua execução</p>
+            <p>teste</p>
+            <p>teste</p>
+            <p>teste</p>
+            <p>teste</p>
+            <p>teste</p>
+            <p>teste</p>
+            <p>teste</p>
+
+        </div>
+        <div class="box_resposta">
+            <p>
+                A resposta certa é:
+            </p>
+            <p>mimimimimi</p>
+            <p>mimimimimi</p>
+            <p>mimimimimi</p>
+            <p>mimimimimi</p>
+            <p>mimimimimi</p>
+            <p>mimimimimi</p>
+            <p>mimimimimi</p>
+        </div>
+        <div class="button_gabarito">
+            <a type="button" class="btn btn-info" href="#">Voltar</a>
+            <a type="button" class="btn btn-info" href="#" style="margin-left: 30px;">Avançar</a>
+        </div>
+       </div> <!-- end panel & scroll -->
+    </div> <!-- end content -->
+
+    <script ype="text/javascript" src="~/Scripts/jquery-2-1-3.min.js"></script>
+</body>
+</html>
+
