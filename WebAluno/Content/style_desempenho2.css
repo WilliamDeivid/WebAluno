@@ -241,25 +241,6 @@ span#nomeProva {
   -webkit-transform: translate3d(0, 0, 0);
   /*clear: both;*/
 }
-/* USAR CSS ABAIXO SE QUISER USAR OUTRA
-COR NAS BARRAS PARES E IMPARES
-.bars .bar:nth-of-type(2n) {
-  background: #ed7669;
-} */
-
-/*.bars .bar .label {
-  font-size: .75em;
-  padding: 1em;
-  background: #3d3d3d;
-  width: 8em;
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  font-weight: bold;
-}
-.bars .bar .label.light {
-  background: #575757;
-}*/
 
 .bars .count {
   position: absolute;

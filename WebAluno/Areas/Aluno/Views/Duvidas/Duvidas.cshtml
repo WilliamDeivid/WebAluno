@@ -7,11 +7,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/style_menu.css" rel="stylesheet">
     <link href="~/Content/Panel.css" rel="stylesheet">
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style_tirar_duvidas.css" rel="stylesheet">
     <script type="text/javascript" src="~/Scripts/Menu.js"></script>
-    <title>Unisociesc - Aluno</title>
+    <title>Unisociesc - Dúvidas</title>
 </head>
 <body>
     <div class='content'>
@@ -30,20 +31,109 @@
                 <li><a href="/Aluno/RealizarProva/RealizarProvaFiltro"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Realizar prova</a></li>
                 <li><a href="/Aluno/Duvidas/Duvidas"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas</a></li>
                 <li><a href="/Aluno/DesempenhoResultado/DesempenhoResultado"><i class="fa fa-bar-chart" aria-hidden="true"></i>Desempenho e Resultados</a></li>
-                <!-- <li><a id="submenu-2" href="javascript:void(0)" onclick="showresponddiv(this.id)"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Submenu2</a>
-              <ul id="opensubmenu-2" class="submenu" style="display: block;">
-                <li><a href="#">Submenu1</a></li>
-                <li><a href="#">Submenu2</a></li>
-                <li><a href="#">Submenu3</a></li>
-              </ul>
-            </li> -->
             </ul>
         </div>
         <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
         <div class="panel" id="scroll">
             <h1>Dúvidas</h1>
+
+            <div class="centralizar">
+                <form class="form-filtros">
+                    <div class="form-group">
+                        <label>Selecione a disciplina</label>
+                        <select class="form-control">
+                            <
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="so1">Sistemas Operacionais 1</option>
+                            <option value="so2">Sistemas Operacionais 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Selecione o assunto</label>
+                        <select class="form-control">
+                            <
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="server2003">Windows Server 2003</option>
+                            <option value="server2008r2">Windows Server 2008 R2</option>
+                            <option value="server2012r2">Windows Server 20012 R2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Selecione o(a) professor(a)</label>
+                        <select class="form-control">
+                            <
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="manseira">Manseira</option>
+                            <option value="francini">Francini</option>
+                        </select>
+                    </div>
+                    <a type="button" class="btn btn-info" href="graficos2.html">Pesquisar</a>
+                </form>
+            </div>
+            <div class="table-center">
+                <table class="table table-bordered fixed-header">
+                    <thead>
+                        <tr>
+                            <th>DISCIPLINA</th>
+                            <th>ASSUNTO</th>
+                            <th>DÚVIDA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao cosnsumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao cosnsumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao cosnsumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                        <tr>
+                            <td>Direito Aplicado a Computação</td>
+                            <td>Direito ao consumidor</td>
+                            <td>Como que eu vou saber fazer a prova...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
 </html>
-

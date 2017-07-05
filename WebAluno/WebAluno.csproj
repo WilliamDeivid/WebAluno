@@ -147,11 +147,17 @@
     <Content Include="Content\style_desempenho.css" />
     <Content Include="Content\style_gabarito.css" />
     <Content Include="Content\style_desempenho2.css" />
+    <Content Include="Content\style_inicio.css" />
     <Content Include="Content\style_menu.css" />
+    <Content Include="Content\style_Perfil.css" />
+    <Content Include="Content\style_realizar_prova_filtro.css" />
+    <Content Include="Content\style_tirar_duvidas.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Imagens\caderno.png" />
     <Content Include="Imagens\error.png" />
     <Content Include="Imagens\fundo.jpg" />
+    <Content Include="Imagens\remove-peb.png" />
     <Content Include="Imagens\right.png" />
     <Content Include="Imagens\unisociesc.png" />
     <Content Include="Imagens\user.png" />
@@ -167,6 +173,7 @@
     <Content Include="Areas\Aluno\Views\DesempenhoResultado\DesempenhoResultado.cshtml" />
     <Content Include="Areas\Aluno\Views\DesempenhoResultado\DesempenhoResultado_2.cshtml" />
     <Content Include="Areas\Aluno\Views\Gabarito\Gabarito.cshtml" />
+    <Content Include="Areas\Aluno\Views\Perfil\Perfil_Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Graficos.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -174,6 +181,8 @@
     <Content Include="Scripts\jquery-2-1-3.min.js" />
     <Content Include="Scripts\Menu.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Perfil.js" />
+    <Content Include="Scripts\RemoveAlert.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -191,10 +200,32 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\C__migrationhistory.cs" />
+    <Compile Include="Models\alternativa.cs" />
+    <Compile Include="Models\alternativa_hist.cs" />
+    <Compile Include="Models\aptidao.cs" />
+    <Compile Include="Models\area.cs" />
+    <Compile Include="Models\assunto.cs" />
+    <Compile Include="Models\aviso.cs" />
+    <Compile Include="Models\curso.cs" />
+    <Compile Include="Models\disciplina.cs" />
+    <Compile Include="Models\duvida.cs" />
+    <Compile Include="Models\evento.cs" />
+    <Compile Include="Models\grade.cs" />
+    <Compile Include="Models\leitura.cs" />
     <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\Model1Context.cs" />
+    <Compile Include="Models\pendencias.cs" />
+    <Compile Include="Models\prova.cs" />
+    <Compile Include="Models\prova_hist.cs" />
+    <Compile Include="Models\prova_questao.cs" />
+    <Compile Include="Models\questao.cs" />
+    <Compile Include="Models\questao_hist.cs" />
+    <Compile Include="Models\questao_prova_hist.cs" />
+    <Compile Include="Models\resposta.cs" />
     <Compile Include="Models\tipo.cs" />
     <Compile Include="Models\usuario.cs" />
+    <Compile Include="Models\usuario_evento.cs" />
+    <Compile Include="Models\usuario_prova.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\VmLogin.cs" />
   </ItemGroup>
@@ -213,7 +244,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\ForgotPassword.cshtml" />
-    <Content Include="Views\Home\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -223,7 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Aluno\Models\" />
     <Folder Include="Areas\Aluno\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>

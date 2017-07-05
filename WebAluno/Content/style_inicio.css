@@ -1,0 +1,62 @@
+#box {
+  width: 100%;
+  padding: 25px 20px 0 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.box1 {
+  width: 350px;
+  margin-right: 20px;
+  border: 2px solid #666;
+  padding: 5px 9px;
+}
+.box2 {
+  width: 360px;
+  background-image: url(../Imagens/caderno.png);
+  background-repeat: repeat-y;
+  background-attachment: local;
+  padding: 2px 6px 0px 44px
+}
+.style-box {
+  float: left;
+  height: 250px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: justify;
+  line-height: 20px;
+}
+.style-box span {
+  display: block;
+}
+.messages {
+  padding-bottom: 6px;
+  border-bottom: 2px dotted #AAA;
+  margin-bottom: 10px;
+}
+.messages span {
+  line-height: 14,8pt;
+}
+.messages span.ass {
+  padding-top: 18px;
+  font-style: italic;
+}
+.remove-message {
+  position: relative;
+  top: 20px;
+  left: -22px;
+  margin-top: -16px;
+  width: 16px;
+  height: 16px;
+  background: url(../Imagens/remove-peb.png) no-repeat;
+}
+.remove-message:hover {
+  background: url(../Imagens/remove-peb.png) no-repeat;
+}
+.not_messages {
+  border: 0;
+}

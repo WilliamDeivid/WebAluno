@@ -10,10 +10,11 @@
     <link href="~/Content/style_menu.css" rel="stylesheet">
     <link href="~/Content/Panel.css" rel="stylesheet">
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style_realizar_prova_filtro.css" rel="stylesheet">
     <script type="text/javascript" src="~/Scripts/Menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Unisociesc - Aluno</title>
+    <title>Unisociesc - Filtro Realizar Prova</title>
 </head>
 <body>
     <div class='content'>
@@ -32,50 +33,49 @@
                 <li><a href="/Aluno/RealizarProva/RealizarProvaFiltro"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Realizar prova</a></li>
                 <li><a href="/Aluno/Duvidas/Duvidas"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas</a></li>
                 <li><a href="/Aluno/DesempenhoResultado/DesempenhoResultado"><i class="fa fa-bar-chart" aria-hidden="true"></i>Desempenho e Resultados</a></li>
-                <!-- <li><a id="submenu-2" href="javascript:void(0)" onclick="showresponddiv(this.id)"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Submenu2</a>
-              <ul id="opensubmenu-2" class="submenu" style="display: block;">
-                <li><a href="#">Submenu1</a></li>
-                <li><a href="#">Submenu2</a></li>
-                <li><a href="#">Submenu3</a></li>
-              </ul>
-            </li> -->
             </ul>
         </div>
         <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
         <div class="panel" id="scroll">
-            
-            <div>
-                <div class="col-container" style="width: 844px; height: 450px; padding-left: 300px; padding-right: 300px;">
-                    <div class="col">
-                        <h1>Filtro da Prova</h1>
-                        <form action="">
-                            <label>Nome da avaliação</label><br>
-                            <input type="text" data-provide="typeahead" placeholder="Avaliação S.O_1" style="height: 26px; width: 244px;">
-                            <br />
-                            <label>Selecione a disciplina</label><br>
-                            <select style="width: 241px;">
-                                <option value="Windows">S.O 1</option>
-                                <option value="Linux">S.O 2</option>
-                            </select>
-                            <br>
-                            <label>Selecione o(os) assunto(os)</label><br>
-                            <select name="assuntos" multiple style="width: 242px;">
-                                <option value="Windows">Windows</option>
-                                <option value="Linux">Linux</option>
-                            </select>
-                            <br>
-                            <label>Quantidade de questões por nível:</label><br>
-                            <label>Nível 1 </label><br><input class="form-control" type="number" value="1" id="example-number-input" min="1" max="20">
-                            <label>Nível 2</label><br><input class="form-control" type="number" value="1" id="example-number-input" min="1" max="20">
-                            <label>Nível 3</label><br><input class="form-control" type="number" value="1" id="example-number-input" min="1" max="20">
-                            <label>Nível 4</label><br><input class="form-control" type="number" value="1" id="example-number-input" min="1" max="20">
-                            <label>Nível 5</label><br><input class="form-control" type="number" value="1" id="example-number-input" min="1" max="20">
-                            <center><button type="button" class="btn btn-primary" style="margin:20px 20px 20px 20px">Iniciar</button></center>
-                        </form>
+            <h1>Filtro da Prova</h1>
+            <div class="centralizar">
+                <form action="">
+                    <div class="form-group">
+                        <label>Nome da avaliação</label><br>
+                        <input class="form-control" type="text" data-provide="typeahead" placeholder="Avaliação S.O_1">
                     </div>
-                </div>             
+                    <div class="form-group">
+                        <label>Selecione a disciplina</label><br>
+                        <select class="form-control">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="Windows">S.O 1</option>
+                            <option value="Linux">S.O 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Selecione o(os) assunto(os)</label><br>
+                        <select class="form-control" name="assuntos" multiple>
+                            <option value="Windows">Windows</option>
+                            <option value="Linux">Linux</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantidade de questões por nível:</label><br>
+                        <label>Nível 1</label>
+                        <input class="form-control" type="number" placeholder="0" value="" id="example-number-input" min="1" max="20" style="width:70px;">
+                        <label>Nível 2</label>
+                        <input class="form-control" type="number" placeholder="0" value="" id="example-number-input" min="1" max="20" style="width:70px;">
+                        <label>Nível 3</label>
+                        <input class="form-control" type="number" placeholder="0" value="" id="example-number-input" min="1" max="20" style="width:70px;">
+                        <label>Nível 4</label>
+                        <input class="form-control" type="number" placeholder="0" value="" id="example-number-input" min="1" max="20" style="width:70px;">
+                        <label>Nível 5</label>
+                        <input class="form-control" type="number" placeholder="0" value="" id="example-number-input" min="1" max="20" style="width:70px;">
+                        <center><a type="button" class="btn btn-info" href="/Aluno/RealizarProva/RealizarProva"style="margin-top: 15px;">Iniciar</a></center>
+                    </div>
+                </form>
             </div>
-        </div>
+        </div> 
     </div>
 </body>
 </html>

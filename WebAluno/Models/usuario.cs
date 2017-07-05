@@ -6,7 +6,7 @@ namespace WebAluno.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("webaluno.usuario")]
+    [Table("proj_db.usuario")]
     public partial class usuario
     {
         [Key]
@@ -34,8 +34,14 @@ namespace WebAluno.Models
         public int CDTIPO { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string SENHA { get; set; }
+
+        [StringLength(50)]
+        public string EMAIL { get; set; }
+
+        [StringLength(255)]
+        public string AUTH_ID { get; set; }
 
         public virtual tipo tipo { get; set; }
     }

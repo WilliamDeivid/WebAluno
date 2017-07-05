@@ -7,10 +7,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/style_menu.css" rel="stylesheet">
     <link href="~/Content/Panel.css" rel="stylesheet">
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style_inicio.css" rel="stylesheet">
     <script type="text/javascript" src="~/Scripts/Menu.js"></script>
+    <script type="text/javascript" src="~/Scripts/RemoveAlert.js"></script>
     <title>Unisociesc - Aluno</title>
 </head>
 <body>
@@ -30,18 +32,50 @@
                 <li><a href="/Aluno/RealizarProva/RealizarProvaFiltro"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Realizar prova</a></li>
                 <li><a href="/Aluno/Duvidas/Duvidas"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas</a></li>
                 <li><a href="/Aluno/DesempenhoResultado/DesempenhoResultado"><i class="fa fa-bar-chart" aria-hidden="true"></i>Desempenho e Resultados</a></li>
-                <!-- <li><a id="submenu-2" href="javascript:void(0)" onclick="showresponddiv(this.id)"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Submenu2</a>
-                  <ul id="opensubmenu-2" class="submenu" style="display: block;">
-                    <li><a href="#">Submenu1</a></li>
-                    <li><a href="#">Submenu2</a></li>
-                    <li><a href="#">Submenu3</a></li>
-                  </ul>
-                </li> -->
             </ul>
         </div>
         <span class='showmenu' onclick="openNav()" title="Abrir Menu">&#9776;</span>
         <div class="panel" id="scroll">
-            <h1>Home</h1>
+            <div id="box">
+                <div class="box1 style-box">
+                    <span><b>Turma:</b> BSI371</span><br>
+                    <span><b>Datas importantes:</b></span>
+                    <span>14/04/2017 - Prova de programação</span>
+                    <span>25/05/2017 - Prova de Redes de Computadores</span>
+                    <span>30/05/2017 - Entrega TCC - parte 1</span>
+                    <span>08/06/2017 - Prova Global</span>
+                    <span>19/06/2017 - Semestral de Programação I</span>
+                </div>
+                <div class="box2 style-box">
+                    <div id="alert1" class="messages" onClick="delete_alert(this.id)">
+                        <a onclick="delete_alert1()" href="#" type="submit" title="Apagar aviso" alt="Apagar aviso"><span class="remove-message"></span></a>
+                        <span>Alunos, não haverá aula de Programação I no dia 29/06/2017 (quinta-feira).</span>
+                        <span class="ass">~~Francini Heitz</span>
+                    </div>
+                    <div id="alert2" class="messages" onClick="delete_alert(this.id)">
+                        <a href="#" type="submit" title="Apagar aviso" alt="Apagar aviso"><span class="remove-message"></span></a>
+                        <span>Alunos, não esqueçam de estudar para a prova Global, que será realizada no dia 26/07/2017 (sexta-feira) na sala B204.</span>
+                        <span>
+                            Trazer: Documento com foto, lápis e caneta azul ou preta.
+                            <span class="ass">~~Edicarsia</span>
+                    </div>
+                    <div id="alert3" class="messages" onClick="delete_alert(this.id)">
+                        <a href="#" type="submit" title="Apagar aviso" alt="Apagar aviso"><span class="remove-message"></span></a>
+                        <span>Alunos, não haverá aula de Programação I no dia 29/06/2017 (quinta-feira).</span>
+                        <span class="ass">~~Francini Heitz</span>
+                    </div>
+                    <div id="alert4" class="messages" onClick="delete_alert(this.id)">
+                        <a href="#" type="submit" title="Apagar aviso" alt="Apagar aviso"><span class="remove-message"></span></a>
+                        <span>Alunos, não esqueçam de estudar para a prova Global, que será realizada no dia 26/07/2017 (sexta-feira) na sala B204.</span>
+                        <span>
+                            Trazer: Documento com foto, lápis e caneta azul ou preta.
+                            <span class="ass">~~Edicarsia</span>
+                    </div>
+                    <div class="messages not_messages" onClick="delete_alert(this.id)">
+                        <span>Você não possui mais avisos.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
